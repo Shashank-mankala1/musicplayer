@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1406px)" href="css/phone.css">
+
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="side_container">
+            <div class="sidetext">
+                <h4>Music is the moonlight in the gloomy night of life.</h4>
+                <p> -John Paul Friedrich Richter </p>
+                <br>
+                <h4>Music is the literature of the heart; it commences where speech ends. </h4>
+                <p> -Alphonse de Lamartine </p>
+            </div>
+        </div>
+        <div class="music_container">
+            <h2 id="title">Believer</h2>
+            <h4 id="artist">Imagine Dragons</h4>
+            <div class="img_container">
+                <img src="img/believer.jpg" alt="Believer" srcset="">
+            </div>
+            <audio src="music/Believer.mp3"></audio>
+
+
+            <!-- progressbar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">3:36</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+
+            <!-- controls -->
+            <div class="slidecontainer" title="Volume">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" min="0" max="100" value="50" id="volume" class="slider">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="music_controls">
+                <!-- <input type="range" orient="vertical" /> -->
+                <i class="fas fa-step-backward" id="replay" title="replay"></i>
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+                <a href="music/Believer.mp3" title="download" class="fas" id="download" download> <i
+                        class="fas fa-download fa-xs"></i> </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
