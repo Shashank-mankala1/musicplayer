@@ -34,7 +34,6 @@ const songs = [
 
 const playmusic = () => {
     isplaying = true;
-    loadsong(songs[0]);
     music.play();
     play.classList.replace("fa-play", "fa-pause");
     img.classList.add("anime");
@@ -63,7 +62,7 @@ const loadsong = (songs) => {
     img.src = `img/${songs.name}.jpg`;
 };
 let songindex = 0;
-// loadsong(songs[2]);
+loadsong(songs[0]);
 const nextsong = () => {
     songindex = (songindex + 1) % songs.length;
     loadsong(songs[songindex]);
