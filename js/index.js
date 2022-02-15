@@ -34,6 +34,7 @@ const songs = [
 
 const playmusic = () => {
     isplaying = true;
+    loadsong(songs[0]);
     music.play();
     play.classList.replace("fa-play", "fa-pause");
     img.classList.add("anime");
